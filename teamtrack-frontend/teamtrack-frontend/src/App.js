@@ -1,12 +1,20 @@
 import React from 'react';
-import PlayerList from './components/Player/PlayerList';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import DashboardLayout from './components/layout/DashboardLayout';
+import PlayerList from './components/players/PlayerList';
 
 function App() {
   return (
-    <div>
-      <h1>TeamTrack</h1>
-      <PlayerList />
-    </div>
+    <Router>
+      <Routes>
+        {/* Route racine avec le layout */}
+        <Route element={<DashboardLayout />}>
+          <Route path="/" element={<PlayerList />} />
+          <Route path="/players" element={<PlayerList />} />
+          {/* Ajoutez vos autres routes ici */}
+        </Route>
+      </Routes>
+    </Router>
   );
 }
 

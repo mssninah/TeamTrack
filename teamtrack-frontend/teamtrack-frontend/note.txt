@@ -1,0 +1,25 @@
+src/
+├── components/
+│   ├── layout/
+│   │   ├── DashboardLayout.jsx
+│   │   ├── Sidebar.jsx
+│   │   └── Header.jsx
+│   │   
+│   ├── players/
+│   │   ├── PlayerList.jsx
+│   │   ├── PlayerForm.jsx
+│   │   └── PlayerCard.jsx
+│   └── ui/
+│       ├── Button.jsx
+│       ├── Table.jsx
+│       └── Modal.jsx
+├── services/
+│   ├── api.js
+│   ├── playerService.js
+│   ├── feeService.js
+│   └── paymentService.js
+├── hooks/
+│   └── useFetch.js
+├── utils/
+│   └── helpers.js
+└── App.js
